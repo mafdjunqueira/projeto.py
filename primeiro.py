@@ -49,7 +49,7 @@ while exibindo_capa:
 
     tela.blit(imagem_capa, ((largura - imagem_capa.get_width()) / 2, (altura - imagem_capa.get_height()) / 2))
     pygame.display.update()
-  
+   
 
 # Cores
 marrom = (139, 69, 19)
@@ -140,12 +140,12 @@ grupo_cavalo_jogador.add(cavalo_jogador)
 
 imagens_animacao_cavalo_jogador = []
 for i in range(1, 5):
-    imagem = pygame.image.load(f'{i}.png').convert_alpha()
+    imagem = pygame.image.load(f'cavalo{i}.png').convert_alpha()
     imagem.set_colorkey((0, 0, 0))  # Define a cor preta como transparente
     imagens_animacao_cavalo_jogador.append(imagem)
 
 # Carregar as imagens dos cavalos adversários
-nomes_arquivos_imagens = ['Marrom.png', 'Rosa.png', 'Lilas.png', 'Verde.png','Azul.png']
+nomes_arquivos_imagens = ['Rosa.png', 'Lilas.png', 'Verde.png','Azul.png']
 imagens_cavalos = []
 for nome_arquivo_imagem in nomes_arquivos_imagens:
     imagem = pygame.image.load(nome_arquivo_imagem).convert_alpha()
